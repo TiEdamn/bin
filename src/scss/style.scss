@@ -30,6 +30,24 @@ a{
   }
 }
 
+.blue{
+  color: $blue;
+}
+
+.underline{
+  position: relative;
+  margin-bottom: 40px;
+  &:before{
+    content: '';
+    width: 150px;
+    height: 3px;
+    background: $blue;
+    display: block;
+    position: absolute;
+    bottom: -20px;
+  }
+}
+
 .btn{
   img{
     width: 26px;
@@ -288,7 +306,6 @@ footer{
 }
 
 #promo{
-  background: lighten($grey, 1%);
   padding: 80px 0;
   margin-top: 60px;
   p{
@@ -303,4 +320,8 @@ footer{
     bottom: -60px;
     width: 350px;
   }
+}
+
+.blue-bg{
+  background: lighten($grey, 1%);
 }

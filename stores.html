@@ -12,20 +12,25 @@
     <script type="text/javascript" src="/dist/bundle.js?v=1.0.0"></script>
 </head>
 <body>
-<nav class="wow fadeInDown">
-    <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
+<div id="menu">
+    <div class="container wow fadeInDown">
+        <nav class="navbar navbar-expand-md justify-content-between navbar-light">
             <a href="/"><img src="/images/logo.png" alt="JAVA"></a>
-            <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Stores</a></li>
-                <li><a href="/contacts.html">Contact us</a></li>
-            </ul>
-        </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-md-grow-0" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/about.html" class="nav-link">About us</a></li>
+                    <li class="nav-item"><a href="/products.html" class="nav-link">Products</a></li>
+                    <li class="nav-item"><a href="/stores.html" class="nav-link">Stores</a></li>
+                    <li class="nav-item"><a href="/contacts.html" class="nav-link">Contact us</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-</nav>
+</div>
 <div id="breadcrumbs">
     <div class="container">
         <h1 class="wow fadeIn">Stores</h1>
@@ -37,7 +42,7 @@
 <section id="stores">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12 mb-5">
                 <h3 class="wow fadeInLeftSmall">Official sales outlets</h3>
                 <p class="wow fadeInLeftSmall" data-wow-delay="0.2s">You can buy our products from official retailers. The list of available stores is as follows:</p>
                 <h5 class="wow fadeInLeftSmall underline mt-5" data-wow-delay="0.4s">Europe</h5>

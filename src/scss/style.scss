@@ -274,6 +274,28 @@ header {
   }
 }
 
+#prod-page{
+  .btn {
+    min-width: 100%;
+  }
+  .shadow, .series-row{
+    margin-bottom: 50px;
+  }
+  h4 {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 18px;
+  }
+  .price {
+    color: $blue;
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .model {
+    margin-bottom: 15px;
+  }
+}
+
 #contacts{
   .icon{
     width: 30px;

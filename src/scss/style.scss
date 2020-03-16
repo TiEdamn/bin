@@ -163,6 +163,60 @@ strong {
   font-weight: 600;
 }
 
+#carousel{
+  padding: 70px 0;
+  .owl-dots{
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+    .owl-dot{
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      margin: 0 3px;
+      border-radius: 50%;
+      background: $white;
+      position: relative;
+      outline: none;
+      &.active{
+        span{
+          background: $blue;
+          width: 8px;
+          height: 8px;
+          position: absolute;
+          display: block;
+          border-radius: 50%;
+          top: 4px;
+          left: 4px;
+        }
+      }
+    }
+  }
+}
+#links{
+  padding: 70px 0;
+  a{
+    background-size: cover;
+    height: 200px;
+    color: $white;
+    font-size: $h5;
+    font-weight: 600;
+    &:hover{
+      text-decoration: none;
+    }
+    span{
+      padding: 0 10px;
+      border-radius: 10px;
+      background: rgba($blue, 0.5);
+    }
+  }
+}
+
+.small{
+  font-size: $small;
+}
+
 #menu{
   position: fixed;
   top: 0;
@@ -212,8 +266,13 @@ header {
   }
 }
 
+.ajax_form .error {
+  color: initial !important;
+  border: 1px solid #ff0000;
+}
+
 #breadcrumbs{
-  margin-top: 52px;
+  margin-top: 61px;
   margin-bottom: 30px;
   padding: 20px 0;
   background: lighten($grey, 2%);
@@ -350,6 +409,14 @@ footer{
   }
 }
 
+.wr-mode{
+  writing-mode: tb;
+}
+
 .blue-bg{
   background: lighten($grey, 1%);
+}
+
+#about-page{
+  margin-top: -30px;
 }

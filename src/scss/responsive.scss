@@ -5,6 +5,13 @@
 }
 
 @media (max-width: 768px) {
+    .wr-mode{
+        writing-mode: lr;
+        margin-bottom: 30px;
+    }
+    #breadcrumbs{
+        margin-top: 52px;
+    }
     #menu{
         ul {
             margin-top: 20px;

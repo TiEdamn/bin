@@ -4,6 +4,12 @@
 
 }
 
+@media (min-width: 769px) {
+    #menu .dropdown:hover>.dropdown-menu {
+        display: block;
+    }
+}
+
 @media (max-width: 768px) {
     .wr-mode{
         writing-mode: lr;

@@ -8,4 +8,11 @@ $(document).ready(function() {
         autoplayHoverPause: true,
         autoplayTimeout: 5000
     });
+
+    if($(window).width() > 768) {
+        $('body').on('click', '#menu .dropdown .dropdown-toggle', function(e){
+            e.preventDefault();
+            window.location = $(this).attr('href');
+        })
+    }
 });
